@@ -1,0 +1,599 @@
+@import url('../fonts/stylesheet.css');
+
+body {
+    font-family: 'Museo Sans Cyrl 300';
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container  {
+    width: 940px;
+    margin: 0 auto;
+}
+
+div, a, span, button, input, form, p {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Natasha';
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1  {
+    font-size: 49px;
+}
+
+h2  {
+    font-size: 37px;
+    letter-spacing: 4px;
+    color: #22241b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+
+/* header */
+
+.header {
+    background: url("../img/back.png") no-repeat center top;
+    padding: 56px 0 84px;
+    letter-spacing: 2px;
+}
+
+.logo {
+    font-weight: 100;
+    transition: 0.25s;
+}
+
+.logo:hover {
+    color: yellow;
+}
+
+.logo__bold {
+    font-family: 'Museo Sans Cyrl 900';
+}
+
+.nav__list {
+    margin-left: 57px;
+}
+
+.nav__list li {
+    font-family: 'Museo Sans Cyrl 900';
+    margin-right: 43px;
+    font-size: 15px;
+}
+
+.nav__link {
+    position: relative;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s;
+}
+
+.nav__link:hover:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s;
+}
+
+.email {
+    font-size: 13px;
+    border-bottom: 1px solid #686966;
+    text-transform: none;
+    padding-bottom: 4px;
+    transition: 0.25s;
+}
+
+.email:hover {
+    color: yellow;
+    border-color: yellow;
+    font-weight: 900;
+}
+
+.title-block {
+    text-align: center;
+    margin-top: 290px;
+    letter-spacing: 6px;
+}
+
+.title-block__p {
+    font-family: 'Museo Sans Cyrl 100', sans-serif;
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    letter-spacing: 3px;
+}
+
+.arrow {
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    font-size: 18px;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    padding: 6px 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 250px auto 0;
+    transition:0.5s;
+}
+
+.arrow:hover {
+    transition:0.5s;
+    background-color: #fff;
+    color: #22241b;
+}
+
+/* section about-me */
+
+.about-me {
+    color: #22241b;
+    padding: 82px 0 2px;
+}
+
+.about-me__title {
+    margin-bottom: 72px;
+}
+
+.experience {
+    width: 424px;
+}
+
+.experience__title {
+    font-size: 22px;
+    color: #22241b;
+    opacity: 0.66;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.experience p {
+    margin-bottom: 33px;
+    font-size: 15px;
+    line-height: 1.7em;
+}
+
+.merit {
+    color: #22241b;
+    margin-left: 20px;
+    width: 462px;
+}
+
+.merit-title {
+    font-size: 22px;
+    color: #22241b;
+    opacity: 0.66;
+    margin-bottom: 57px;
+    letter-spacing: 2px;
+}
+
+.merit__list {
+    display: flex;
+    justify-content: space-between;
+    width: 428px;
+    margin-left: 14px;
+}
+
+.merit__list p {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.merit__list li {
+    text-align: center;
+    width: 110px;
+}
+
+.merit__item {
+    position: relative;
+    width: 73px;
+    border: 1px solid #204d15;
+    height: 73px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    transition: 0.7s ease-in-out;
+}
+
+.merit__item:after {
+    content: '';
+    display: block;
+    border: 1px solid #c6d6bb;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+}
+
+.merit__item:hover {
+    background: #c6d6bb;
+}
+
+.merit__item span {
+    font-size: 20px;
+    color: #204d15;
+    transform: rotate(315deg);
+}
+
+.connection__block {
+    display: flex;
+}
+
+.connection__title {
+    font-size: 22px;
+    color: #22241b;
+    opacity: 0.66;
+    margin: 65px 0 30px;
+    letter-spacing: 2px;
+}
+
+.connection__list li {
+    margin-bottom: 17px;
+}
+
+.connection__link {
+    color: #204d15;
+    font-size: 14px;
+    text-transform: none;
+    border-bottom: 1px solid #becbbb;
+    letter-spacing: 2px;
+    transition: 0.7s;
+}
+
+.connection__link:hover {
+    color: #123a0a;
+    border-bottom: 1px solid #123a0a;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    height: 84px;
+    margin-left: 37px;
+}
+
+.call__link {
+    width: 64px;
+    height: 64px;
+    background: #eef1ed;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 17px;
+    transition:0.7s;
+}
+
+.call__link:hover {
+    background: #e3e5be;
+}
+
+i {
+    font-size: 14px;
+    color: #797a77;
+    margin-left: 19px;
+}
+
+/* section skills */
+
+.skills {
+    padding-top: 58px;
+}
+
+.skills__list {
+    color: #4b4c47;
+    display: flex;
+    margin-top: 55px;
+}
+
+.skill__item {
+    display: flex;
+    align-items: center;
+    margin-right: 85px;
+}
+
+.skill__element {
+    color: #204d15;
+    position: relative;
+    width: 61px;
+    border: 1px solid #204d15;
+    height: 61px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill__element:after {
+    content: '';
+    display: block;
+    border: 1px solid #c6d6bb;
+    position: absolute;
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+}
+
+.skill__item h5 {
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* section works */
+
+.works {
+    padding-top: 80px;
+}
+
+.works__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+}
+
+.work {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.work__overlay {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.50);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    flex-direction: column;
+}
+
+.work__overlay:hover {
+    opacity: 1;
+}
+
+.work__name {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px; ;
+}
+
+.work__link {
+    font-weight: 300;   
+    font-size: 13px;
+    border-bottom: 1px solid #fff;
+    text-transform: none;
+}
+
+.work img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+.footer__txt {
+    font-size: 11px;
+    color: #888886;
+    text-transform: uppercase;
+    padding: 122px 0 112px;
+    letter-spacing: 2px;
+}
+
+/*---media queries---*/
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 710px;
+    }
+    .work {
+        width: 230px;
+        height: 230px;
+    }
+    .experience {
+        width: 100%;
+    }
+    .about-me__wrapper {
+        flex-direction: column;
+    }
+    .merit {
+        margin: 0;
+        width: 100%;
+    }
+    .merit__list {
+        width: 100%;
+        margin: 0;
+    }
+    .call {
+        margin-left: 150px;
+    }
+    .skill__item {
+        margin-right: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-top: 34px;
+    }
+    .container {
+        width: 540px;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav__list {
+        margin: 20px 0;
+    }
+    .nav__list li {
+        margin: 0;
+    }
+    .email {
+        width: 140px;
+        margin: 0 auto;
+    }
+    .title-block {
+        margin-top: 250px;
+    }
+    .arrow {
+        margin-top: 170px;
+    }
+    .merit {
+        margin: 0;
+        width: 100%;
+    }
+    .merit__list {
+        width: 100%;
+    }
+    .connection__block {
+        justify-content: space-between;
+    }
+    .call {
+        margin-left: 80px;
+    }
+    .work {
+        width: 170px;
+        height: 170px;
+    }
+    .skills__list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .skill__item {
+        width: 210px;
+        margin: 14px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .header {
+        padding-bottom: 30px;
+    }
+    .about-me {
+        padding-top: 40px;
+    }
+    .about-me__title {
+        margin-bottom: 40px;
+    }
+    .skills {
+        padding-top: 30px;
+    }
+    .skills__list {
+        margin-top: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .works {
+        padding-top: 40px;
+    }
+    .title-block {
+        margin-top: 200px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2, h3 {
+        text-align: center;
+    }
+    .merit {
+        margin: 0;
+        width: 100%;
+    }
+    .merit__list {
+        margin: 0 auto;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+    }
+    .merit__list li {
+        margin-bottom: 30px;
+    }
+    .connection__block {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .connection__title {
+        margin: 30px 0 30px;
+    }
+    .connection__list {
+        text-align: center;
+    }
+    .call {
+        margin: 10px 0 0 0;
+        justify-content: center;
+    }
+    .works__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work {
+        width: 290px;
+        height: 290px;
+        margin-bottom: 14px;
+    }
+    .arrow {
+        margin-top: 150px;
+    }
+    .footer__txt {
+        padding: 60px 0 60px;
+    }
+}
